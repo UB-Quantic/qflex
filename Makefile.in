@@ -16,7 +16,7 @@ ifeq ($(ERROR_ON_WARNINGS), true)
 endif
 
 ifeq ($(CXX), icpc)
-	CXXFLAGS += -mkl -DMKL_TENSOR
+	CXXFLAGS += -mkl
 else
   LIBS := -lopenblas $(LIBS)
 endif
